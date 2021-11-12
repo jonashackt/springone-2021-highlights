@@ -21,13 +21,39 @@ __*"Spring Native"*__ by https://twitter.com/sdeleuze
 
 https://github.com/spring-projects-experimental/spring-native
 
-Spring Native Beta (March 2021):
+
+![what-is-spring-native](what-is-spring-native.png)
+
+JVM & native comparison / tradeoffs:
+
+![jvm-vs-native-tradeoffs](jvm-vs-native-tradeoffs.png)
+
+JVM: more runtime optimizations!
+
+native: memory & startup time!
+
+![use-cases](use-cases.png)
+
+![challenges](challenges.png)
+
+![current-native-support](current-native-support.png)
+
+##### Spring Native Beta (March 2021):
 
 ![spring-native-beta](spring-native-beta.png)
 
 https://spring.io/blog/2021/03/11/announcing-spring-native-beta
 
 > While it is still considered as experimental, beta means that Spring now provides support for native on a subset of the Spring ecosystem. You can try it on your projects if they are using the supported dependencies and raise bugs or contribute pull requests if something goes wrong. A new release of Spring Native will happen for each patch release of the latest Spring Boot 2.x minor version. Spring Native 0.9.0 supports Spring Boot 2.4.3, Spring Native 0.9.1 will support Spring Boot 2.4.4, etc. Breaking changes will happen but we will document migration paths.
+
+or 2.5.x: https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/index.html#_validate_spring_boot_version
+
+> Spring Native 0.10.5 only supports Spring Boot 2.5.6, so change the version if necessary. 
+
+
+##### Spring AOT
+
+https://spring.io/blog/2021/03/11/announcing-spring-native-beta
 
 ```
 reflect-config.json
@@ -39,6 +65,10 @@ native-image.properties
 ##### @NativeHint
 
 > Some native configuration can not be inferred, for those cases we are introducing native hint annotations (see the Javadoc for more details) which allows Spring Native to support native configuration in a more maintainable, typesafe and flexible way than regular JSON based native image configuration.
+
+##### Docs
+
+https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/index.html#overview
 
 
 ##### Samples!
