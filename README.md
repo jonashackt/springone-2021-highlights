@@ -32,6 +32,8 @@ JVM: more runtime optimizations!
 
 native: memory & startup time!
 
+![build-times](build-times.png)
+
 ![use-cases](use-cases.png)
 
 ![challenges](challenges.png)
@@ -51,19 +53,6 @@ or 2.5.x: https://docs.spring.io/spring-native/docs/current/reference/htmlsingle
 > Spring Native 0.10.5 only supports Spring Boot 2.5.6, so change the version if necessary. 
 
 
-##### Spring AOT
-
-![spring-aot](spring-aot.png)
-
-https://spring.io/blog/2021/03/11/announcing-spring-native-beta
-
-```
-reflect-config.json
-resource-config.json
-native-image.properties
-```
-
-
 ##### @NativeHint
 
 > Some native configuration can not be inferred, for those cases we are introducing native hint annotations (see the Javadoc for more details) which allows Spring Native to support native configuration in a more maintainable, typesafe and flexible way than regular JSON based native image configuration.
@@ -71,8 +60,22 @@ native-image.properties
 ![native-hints](native-hints.png)
 
 
+New from 0.11 on: 
 
-##### Native testing
+##### Enhanced Spring AOT
+
+![spring-aot](spring-aot.png)
+
+https://spring.io/blog/2021/03/11/announcing-spring-native-beta
+
+![spring-aot-compilation](spring-aot-compilation.png)
+
+
+
+
+
+
+##### Native testing with JUnit
 
 JUnit testing native: test the native image support with JUnit 5
 
