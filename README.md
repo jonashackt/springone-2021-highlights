@@ -53,6 +53,8 @@ or 2.5.x: https://docs.spring.io/spring-native/docs/current/reference/htmlsingle
 
 ##### Spring AOT
 
+![spring-aot](spring-aot.png)
+
 https://spring.io/blog/2021/03/11/announcing-spring-native-beta
 
 ```
@@ -65,6 +67,21 @@ native-image.properties
 ##### @NativeHint
 
 > Some native configuration can not be inferred, for those cases we are introducing native hint annotations (see the Javadoc for more details) which allows Spring Native to support native configuration in a more maintainable, typesafe and flexible way than regular JSON based native image configuration.
+
+![native-hints](native-hints.png)
+
+
+
+##### Native testing
+
+JUnit testing native: test the native image support with JUnit 5
+
+![junit-native-support](junit-native-support.png)
+
+No Mockito support right now.
+
+
+
 
 ##### Docs
 
