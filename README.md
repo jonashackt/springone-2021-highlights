@@ -2,17 +2,15 @@
 Notes about my personal highlights of SpringOne 2021
 
 
-### General observations
+## General observations
 
 Find all video-recordings at https://springone.io/2021/schedule (you need to create an account, but most are also on Youtube)
-
-* 
 
 ---
 
 
 
-### Spring Boot & GraalVM Current Status
+## Spring Boot & GraalVM Current Status
 
 <a href="https://www.youtube.com/embed/TXyg6Nm4ZpQ" target="_blank"><img src="http://img.youtube.com/vi/TXyg6Nm4ZpQ/0.jpg" 
 alt="Spring Native (SpringOne2021)" width="240" height="180" /></a>
@@ -21,10 +19,13 @@ __*"Spring Native"*__ by https://twitter.com/sdeleuze
 
 https://github.com/spring-projects-experimental/spring-native
 
+#### What is Spring Native?
 
 ![what-is-spring-native](what-is-spring-native.png)
 
-JVM & native comparison / tradeoffs:
+![use-cases](use-cases.png)
+
+#### JVM & native comparison / tradeoffs
 
 ![jvm-vs-native-tradeoffs](jvm-vs-native-tradeoffs.png)
 
@@ -34,13 +35,13 @@ native: memory & startup time!
 
 ![build-times](build-times.png)
 
-![use-cases](use-cases.png)
+![memory-footprint](memory-footprint.png)
 
 ![challenges](challenges.png)
 
 ![current-native-support](current-native-support.png)
 
-##### Spring Native Beta (March 2021):
+#### Spring Native Beta (March 2021):
 
 ![spring-native-beta](spring-native-beta.png)
 
@@ -53,16 +54,24 @@ or 2.5.x: https://docs.spring.io/spring-native/docs/current/reference/htmlsingle
 > Spring Native 0.10.5 only supports Spring Boot 2.5.6, so change the version if necessary. 
 
 
-##### @NativeHint
+#### @NativeHint
 
 > Some native configuration can not be inferred, for those cases we are introducing native hint annotations (see the Javadoc for more details) which allows Spring Native to support native configuration in a more maintainable, typesafe and flexible way than regular JSON based native image configuration.
 
 ![native-hints](native-hints.png)
 
 
-New from 0.11 on: 
+### Features spring-native 0.11 | GraalVM 21.3 | Spring Boot 2.6.x:
 
-##### Enhanced Spring AOT
+![graalvm-21.3-spring-native-0.11](graalvm-21.3-spring-native-0.11.png)
+
+![spring-native-0.11-features](spring-native-0.11-features.png)
+
+UPX compression again reduces image size dramatically:
+
+![container-image-size-comparison](container-image-size-comparison.png)
+
+#### Enhanced Spring AOT
 
 ![spring-aot](spring-aot.png)
 
@@ -71,11 +80,7 @@ https://spring.io/blog/2021/03/11/announcing-spring-native-beta
 ![spring-aot-compilation](spring-aot-compilation.png)
 
 
-
-
-
-
-##### Native testing with JUnit
+#### Native testing with JUnit
 
 JUnit testing native: test the native image support with JUnit 5
 
@@ -84,14 +89,22 @@ JUnit testing native: test the native image support with JUnit 5
 No Mockito support right now.
 
 
+### Roadmap
+
+![roadmap-spring-boot-3-native-first-class](roadmap-spring-boot-3-native-first-class.png)
+
+![roadmap-spring-boot-3-aot-and-native-support](roadmap-spring-boot-3-aot-and-native-support.png)
+
+![roadmap-native-image-repository](roadmap-native-image-repository.png)
 
 
-##### Docs
+
+### Docs
 
 https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/index.html#overview
 
 
-##### Samples!
+### Samples!
 
 https://github.com/spring-projects-experimental/spring-native/tree/main/samples
 
